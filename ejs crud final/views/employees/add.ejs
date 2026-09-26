@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Add Employee</title>
+
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <div class="form-container">
+      <h1>Add Employee</h1>
+
+      <form action="/add" method="post">
+        <div class="form-group">
+          <label for="name"> Name </label>
+
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter employee name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email"> Email </label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter employee email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone"> Phone </label>
+
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="Enter employee phone"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="image"> Image URL </label>
+
+          <input
+            type="text"
+            id="image"
+            name="image"
+            placeholder="Enter image URL"
+          />
+        </div>
+
+        <button type="submit" class="submit-btn">Add Employee</button>
+
+        <a href="/" class="back-btn"> Back </a>
+      </form>
+    </div>
+  </body>
+</html>

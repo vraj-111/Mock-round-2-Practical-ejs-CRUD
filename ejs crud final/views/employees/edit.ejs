@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Edit Employee</title>
+
+    <link
+        rel="stylesheet"
+        href="/css/style.css"
+    >
+
+</head>
+
+<body>
+
+<div class="form-container">
+
+    <h1>Edit Employee</h1>
+
+    <form
+        action="/edit/<%= employee.id %>"
+        method="post"
+    >
+
+        <div class="form-group">
+
+            <label for="name">
+                Name
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                value="<%= employee.name %>"
+                required
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="email">
+                Email
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                value="<%= employee.email %>"
+                required
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="phone">
+                Phone
+            </label>
+
+            <input
+                type="text"
+                id="phone"
+                name="phone"
+                value="<%= employee.phone %>"
+                required
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="image">
+                Image URL
+            </label>
+
+            <input
+                type="text"
+                id="image"
+                name="image"
+                value="<%= employee.image %>"
+            >
+
+        </div>
+
+
+        <button
+            type="submit"
+            class="submit-btn"
+        >
+            Update Employee
+        </button>
+
+        <a
+            href="/"
+            class="back-btn"
+        >
+            Back
+        </a>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
